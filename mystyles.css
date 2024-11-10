@@ -1,54 +1,82 @@
+/* สไตล์สำหรับพื้นหลังและฟอนต์ */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Thonburi", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #fdfdfd;
+}
+
+header {
+    text-align: center;
+    font-size: 2.5em;
+    color: #76b88d;
+    margin-bottom: 20px;
+}
+
+header::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #ff8b8b;
+    margin: 10px auto;
 }
 
 .form-container {
     width: 100%;
-    max-width: 500px;
-    background-color: #fff;
+    max-width: 400px;
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #76b88d;
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #76b88d;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
+/* สไตล์สำหรับ label และ input */
 label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    font-size: 1.1em;
+    color: #76b88d;
+    margin-bottom: 5px;
 }
 
 input, select, textarea {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #76b88d;
+    border-radius: 5px;
+    background-color: #f9fff9;
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #76b88d;
     color: white;
     border: none;
     cursor: pointer;
-    padding: 12px;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #65a578;
 }
 
 .required {
     color: red;
     margin-left: 4px;
+    font-size: 0.9em;
 }
