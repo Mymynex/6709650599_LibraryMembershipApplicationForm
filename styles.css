@@ -44,7 +44,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* สไตล์สำหรับ label และ input */
 label {
     display: block;
     font-size: 1.1em;
@@ -80,4 +79,43 @@ input[type="submit"]:hover {
     color: red;
     margin-left: 4px;
     font-size: 0.9em;
+}
+/* Media Queries สำหรับหน้าจอเล็ก */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.8em;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    input, select, textarea {
+        padding: 6px;
+        font-size: 1em;
+    }
+
+    input[type="submit"] {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+/* Media Queries สำหรับหน้าจอแท็บเล็ตและเดสก์ท็อป */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        font-size: 2.2em;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
 }
