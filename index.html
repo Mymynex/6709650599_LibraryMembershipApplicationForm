@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มสมัครสมาชิกห้องสมุด</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>แบบฟอร์มสมัครสมาชิกห้องสมุด</h2>
+        <form>
+            <label for="name">ชื่อ - นามสกุล <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="gender">เพศ <span class="required">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="">-- กรุณาเลือกเพศ --</option>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+                <option value="other">อื่น ๆ</option>
+            </select>
+
+            <label for="student-id">รหัสนักศึกษา <span class="required">*</span></label>
+            <input type="text" id="student-id" name="student-id" required>
+
+            <label for="faculty">คณะที่ศึกษา <span class="required">*</span></label>
+            <input type="text" id="faculty" name="faculty" required>
+
+            <label for="email">ที่อยู่อีเมล (E-mail address) <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">วันเดือนปีเกิด <span class="required">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="interested-type">ประเภทของหนังสือที่สนใจ</label>
+            <input type="text" id="interested-type" name="interested-type">
+
+            <label for="newsletter">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label>
+            <select id="newsletter" name="newsletter">
+                <option value="yes">ใช่</option>
+                <option value="no">ไม่</option>
+            </select>
+
+            <input type="submit" value="ส่งแบบฟอร์ม">
+        </form>
+    </div>
+</body>
+</html>
